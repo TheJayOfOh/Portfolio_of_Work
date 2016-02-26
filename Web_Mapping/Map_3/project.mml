@@ -1,0 +1,151 @@
+{
+  "bounds": [
+    -126.6504,
+    24.7269,
+    -65.8301,
+    49.6392
+  ],
+  "center": [
+    -97.0312,
+    40.1789,
+    5
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "themeparks",
+    "template_teaser": "<strong>{{{Name}}}</strong><br>{{{URL}}}</br><br>{{{Address}}}, {{{City}}}, {{{State}}}</br>",
+    "fields": [
+      "Name",
+      "URL",
+      "Address",
+      "City",
+      "State"
+    ]
+  },
+  "minzoom": 5,
+  "maxzoom": 7,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -178.2175983621025,
+        18.921786345047302,
+        -66.96927103576398,
+        71.40623536726817
+      ],
+      "id": "states",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 3 (Part 3)\\states84.shp",
+        "id": "states",
+        "project": "458-thejayofoh-third-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -166.532487587878,
+        -55.11212400026874,
+        178.41907902319156,
+        71.17768427804648
+      ],
+      "id": "streets",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 3 (Part 3)\\ne_10m_roads\\ne_10m_roads.shp",
+        "id": "streets",
+        "project": "458-thejayofoh-third-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "streets"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -170.789401826154,
+        -14.373740000000002,
+        145.79093,
+        71.307227
+      ],
+      "id": "urban",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\osterj\\Downloads\\cb_2014_us_ua10_500k\\cb_2014_us_ua10_500k.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "urban"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -118.5972149,
+        28.4197986,
+        -76.5042299,
+        43.6030402
+      ],
+      "id": "themeparks",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\Web Scraper Lab\\themeparks.shp",
+        "id": "themeparks",
+        "project": "458-thejayofoh-third-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "themeparks"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -118.5972149,
+        28.4197986,
+        -76.5042299,
+        43.6030402
+      ],
+      "id": "themep2",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\Web Scraper Lab\\themeparks.shp",
+        "id": "themep2",
+        "project": "458-thejayofoh-third-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "themep2"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "458-thejayofoh-third-themeparks",
+  "description": "map of the 10 best theme parks in the USA",
+  "legend": "<strong>10 Best Theme Parks in America</strong><br><i>Hover over each park to see specific information</i></br><br>Areas shaded yellow represent urban areas and major roads.</br><br><i>States are shaded from light to dark (lowest to highest) by their population counts</i></br>",
+  "attribution": ""
+}

@@ -1,0 +1,117 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "janfeb16",
+    "template_teaser": "{{{Date Reported}}}<br>{{{Offense Type}}}</br>\n",
+    "fields": [
+      "Date Reported",
+      "Offense Type"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -122.42701237927642,
+        47.4388081839988,
+        -122.22509561660044,
+        47.78014467085402
+      ],
+      "id": "streets",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 2 (Part 2)\\Seattle Streets\\Street_Network_Database.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "streets"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.408958435,
+        47.498962402,
+        -122.25000762899998,
+        47.732860565
+      ],
+      "id": "janfeb16",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 2 (Part 2)\\Seattle_Police_Department_Police_Report_Incident_janfeb16.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "janfeb16"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.41328430200001,
+        47.497386932,
+        -122.25361633300001,
+        47.734127045
+      ],
+      "id": "jan16",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 2 (Part 2)\\Seattle_Police_Department_Police_Report_Incident_Jan_2016.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "jan16"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -122.408958435,
+        47.498962402,
+        -122.25000762899998,
+        47.732860565
+      ],
+      "id": "feb16",
+      "class": "",
+      "Datasource": {
+        "file": "f:\\Geog458 Adv Digital Geog\\TileMill Lab\\Map 2 (Part 2)\\Seattle_Police_Department_Police_Report_Incident_Feb_2016.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "feb16"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "second map",
+  "description": "second map",
+  "legend": "<strong>Crimes in Seattle so far in 2016</strong>\n<br>Blue Circles represent January</br>\n<br>Red Circles represent February (up to 02/19/2016 @1pm)</br>\n<br>Hover Over Circles to get see crime type</br>"
+}

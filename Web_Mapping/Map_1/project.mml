@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "Earthquakes",
+    "template_teaser": "{{{mag}}} Magnitude Earthquake<br/>{{{time}}} "
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.5868,
+        -59.90689999999999,
+        173.6114,
+        66.5653
+      ],
+      "id": "Earthquakes",
+      "class": "",
+      "Datasource": {
+        "file": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.csv",
+        "id": "Earthquakes",
+        "project": "458-TheJayOfOh-first-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "Earthquakes"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Jeremy Oster",
+  "description": "first map in tile mill",
+  "legend": "<strong>Magnitude 2.5+ Earthquakes (Past 7 Days)</strong><br/>Circle size indicates magnitude of earthquake. "
+}
